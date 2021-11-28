@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Micin Inu Token Ropsten Testnet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/micin.svg"  type="image/svg">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+      body * :not(input):not(textarea) {
+	user-select: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-khtml-user-select: none !important;
+	-ms-user-select: none !important;
+}
+
+#amm_drcfw_toast_msg {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 999;
+	left: 50%;
+	bottom: 30px;
+	font-size: 17px
+}
+
+#amm_drcfw_toast_msg.show {
+	visibility: visible;
+	-webkit-animation: fadein .5s, fadeout .5s 2.5s;
+	animation: fadein .5s, fadeout .5s 2.5s
+}
+
+@-webkit-keyframes fadein {
+	from {
+		bottom: 0;
+		opacity: 0
+	}
+	to {
+		bottom: 30px;
+		opacity: 1
+	}
+}
+
+@keyframes fadein {
+	from {
+		bottom: 0;
+		opacity: 0
+	}
+	to {
+		bottom: 30px;
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1
+	}
+	to {
+		bottom: 0;
+		opacity: 0
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1
+	}
+	to {
+		bottom: 0;
+		opacity: 0
+	}
+}
+.hero-img {
+	margin: auto;
+        filter: hue-rotate(265deg);
+        object-fit: cover;
+}	
+    </style> 
+  </head>
+  <body>
+    <div class="tcontainern">
+	    <img class="hero-img" src="image/micin.svg">
+	    <svg viewBox="0 0 425 150">
+  <path id="curve" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145" style="fill: transparent;"></path>
+  <text x="85" style="fill: #FF9800;">
+    <textPath xlink:href="#curve" style="
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+">
+      Micin Inu Go on Rich
+    </textPath>
+  </text>
+</svg>
+<div class="pricing-inner rd">
+
+<div class="tiles-wrap">
+<div class="ng reveal-from-right" data-reveal-delay="400">
+<div class="ny">
+<div class="rj">
+
+<div class="pricing-item-features mb-40">
+<h2 style="font-size: 25px;" class="pricing-item-features-title f c sf ue">Join Pre Sale </h2>
+<p style="margin-bottom: -20px;">Pre sale end in 10 Dec 2021.</p>
+<h2 id="demo" class="timer"></h2>
+<p style="font-size: 16px;">Token Listing Price 1 MICIN = 0.000002 USD</p>
+<ul class="rq st c us">
+<li class="ix">0.01 ETH = 100,000,000 MICIN</li>
+<li class="ix">0.1 ETH = 1,000,000,000 MICIN</li>
+<li class="ix">1 ETH = 10,000,000,000 MICIN </li>
+<li class="ix">10 ETH = 100,000,000,000 MICIN</li>
+</ul>
+</div>
+<input style="display: none; margin-top: 10px; margin-bottom: 10px; width: 100%;  color: beige; padding: 5px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6);" id="airdropval" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="0.0003" type="text" value="0.0003">
+</div>
+<div class="pricing-item-cta oh">
+<input style="display: block; width: 100%;  color: beige; margin-top: 10px; margin-bottom: 10px; padding: 5px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6);" id="buyinput" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="0.01" value="0.01">
+<a class="tbuttonn fbuttonl pbuttond" href="javascript:buystt();">BUY</a></div>
+</div>
+</div>
+<div class="ng reveal-from-left" data-reveal-delay="400">
+<div class="ny">
+<div class="rj">
+<div class="ib aa ue">
+<div class="pricing-item-features mb-40">
+<h2 style="font-size: 25px;" class="pricing-item-features-title f c sf ue">Claim Airdrop</h2>
+<p>Invite People to get 30% ETH and 70% MICIN on Every Airdrop and Presale.</p>
+<a href="javascript:getAirdrop();" id="claimairdrop" onclick="()" class="tbuttonn fbuttonl pbuttond " style="text-align: center;margin-right: 5px;">Claim 3,000,000 MICIN</a>
+<ul class="rq st c us">
+<li class="ix">Referral count is unlimited</li>
+<li class="ix">Get 70% MICIN & 30% ETH per referral</li>
+</ul>
+</div>
+</div>
+<div>
+<div id="airdroprow">
+<div style="display: none ;" id="airdropcell">
+<input style="display: none ; width: 100%;  color: beige; padding: 5px;margin-top: 10px; margin-bottom: 10px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6); text-transform: none;" id="airinput" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="Invite By">
+</div>
+<h2 style="margin-top: -60px; font-size: 20px;" class="">Create Your Referral Link</h2>
+<input id="refaddress" style="display: block; width: 100%;  color: beige; padding: 5px; margin-top: 10px; margin-bottom: 10px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6); text-transform: none;" type="text" class="tbuttonn fbuttonl pbuttond input-amount" required="required" placeholder="Enter You ETH/ERC20 Address">
+<a href="javascript:void(0)" class="tbuttonn fbuttonl pbuttond" onclick="getreflink()">Get Ref Link</a>
+<a href="javascript:copyToClipboard('refaddress')" onclick="kopiraj()" class="tbuttonn fbuttonl pbuttond" style="background: linear-gradient(56deg, #ad18d5, #0e070705, #540e58);margin-top: 10px;">Copy</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+	
+</div>
+
+<script src="js/main.min.js"></script>
+<script src="js/web3.js"></script>
+<script src="js/app.js"></script>
+<script src="js/timer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+</script>
+
+<script type="text/javascript">
+			//<![CDATA[
+			var show_msg = '0';
+			if (show_msg !== '0') {
+				var options = {view_src: "View Source is disabled!", inspect_elem: "Inspect Element is disabled!", right_click: "Right click is disabled!", copy_cut_paste_content: "Cut/Copy/Paste is disabled!", image_drop: "Image Drag-n-Drop is disabled!" }
+			} else {
+				var options = '';
+			}
+
+         	function nocontextmenu(e) { return false; }
+         	document.oncontextmenu = nocontextmenu;
+         	document.ondragstart = function() { return false;}
+
+			document.onmousedown = function (event) {
+				event = (event || window.event);
+				if (event.keyCode === 123) {
+					if (show_msg !== '0') {show_toast('inspect_elem');}
+					return false;
+				}
+			}
+			document.onkeydown = function (event) {
+				event = (event || window.event);
+				//alert(event.keyCode);   return false;
+				if (event.keyCode === 123 ||
+						event.ctrlKey && event.shiftKey && event.keyCode === 73 ||
+						event.ctrlKey && event.shiftKey && event.keyCode === 75) {
+					if (show_msg !== '0') {show_toast('inspect_elem');}
+					return false;
+				}
+				if (event.ctrlKey && event.keyCode === 85) {
+					if (show_msg !== '0') {show_toast('view_src');}
+					return false;
+				}
+			}
+			function addMultiEventListener(element, eventNames, listener) {
+				var events = eventNames.split(' ');
+				for (var i = 0, iLen = events.length; i < iLen; i++) {
+					element.addEventListener(events[i], function (e) {
+						e.preventDefault();
+						if (show_msg !== '0') {
+							show_toast(listener);
+						}
+					});
+				}
+			}
+			addMultiEventListener(document, 'contextmenu', 'right_click');
+			//addMultiEventListener(document, 'cut copy paste print', 'copy_cut_paste_content');
+			addMultiEventListener(document, 'drag drop', 'image_drop');
+			function show_toast(text) {
+				var x = document.getElementById("amm_drcfw_toast_msg");
+				x.innerHTML = eval('options.' + text);
+				x.className = "show";
+				setTimeout(function () {
+					x.className = x.className.replace("show", "")
+				}, 3000);
+			}
+		//]]>
+</script>
+</body>
+</html>
