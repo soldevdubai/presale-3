@@ -1,2 +1,2 @@
-# micininu.github.io
-Hold it, Find another Holder and Get Rewarded
+# Micin Inu Token (Testnet with Ropsten Network)
+This is a smart contract project that has presale, airdrop and referral functions. You can try this smart contract with the ropsten network, if you don't have an ETH balance, please take it for free here: https://faucet.ropsten.be/
