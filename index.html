@@ -97,20 +97,7 @@
         filter: hue-rotate(13deg);
         object-fit: cover;
 }
-#chart_wrap {
-    position: relative;
-    padding-bottom: 100%;
-    height: 0;
-    overflow:hidden;
-}
 
-#chart_div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-}
 
     </style> 
   </head>
@@ -184,9 +171,13 @@
 	<h2 style="text-align:center;color:#bf3268;">Our Vision</h2>
 	<p style="text-align:center;padding-top:35px;">Our purpose is to help create a decentralized financial system by responsibly coordinating people, value, ownership, and reputation. Micin Inu token is aiming to create an ecosystem to increase your asset value as token Building a safe and secure platform to earn a handsome income through staking, along with maintaining their privacy, security, and autonomy. We strive to create an ecosystem based on sound monetary policies, with a sound and solid decentralized foundation, that should be expected with the Micin Inu platform.</p>
         <h2 style="text-align:center;color:#bf3268;">Tokenomic</h2>
-	<div id="chart_wrap">
-        <div id="chart_div"></div>
-        </div>
+	<div class="ng reveal-from-right" data-reveal-delay="400">
+		<img src="image/micin-tokenomic.png">
+	</div>
+        <div class="ng reveal-from-left" data-reveal-delay="400">
+		<img src="image/micin-tokenomic.png">
+	</div>
+        
 </div>
 <script src="js/main.min.js"></script>
 <script src="js/web3.js"></script>
@@ -194,42 +185,7 @@
 <script src="js/timer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-// Load google charts
-google.load("visualization", "1", {packages:["corechart"]});
-google.setOnLoadCallback(drawChart);
 
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Micininu', 'Tokenomic'],
-  ['Token Sale', 6],
-  ['Liquidity', 2],
-  ['Marketing', 1.5],
-  ['Ecosystem', 0.5]
-  
-]);
-
-  var options = {
-    title: 'Tokenomic',
-    is3D: true,
-    backgroundColor: false,
-  };
-
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-  chart.draw(data, options);
-}
-
-$(window).on("throttledresize", function (event) {
-    var options = {
-        width: '100%',
-        height: '100%'
-    };
-
-    var data = google.visualization.arrayToDataTable([]);
-    drawChart(data, options);
-});
-</script>
 <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
