@@ -194,14 +194,12 @@
 <script src="js/timer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://rawgit.com/louisremi/jquery-smartresize/master/jquery.throttledresize.js"></script>	
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
 // Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
 
-// Draw the chart and set the chart values
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
   ['Micininu', 'Tokenomic'],
@@ -212,7 +210,15 @@ function drawChart() {
   
 ]);
 
-  $(window).on("throttledresize", function (event) {
+  var options = {
+    title: 'Tokenomic'
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}
+
+$(window).on("throttledresize", function (event) {
     var options = {
         width: '100%',
         height: '100%'
@@ -221,7 +227,6 @@ function drawChart() {
     var data = google.visualization.arrayToDataTable([]);
     drawChart(data, options);
 });
-}
 </script>
 <script>
         $(document).ready(function(){
