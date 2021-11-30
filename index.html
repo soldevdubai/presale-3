@@ -97,9 +97,19 @@
         filter: hue-rotate(13deg);
         object-fit: cover;
 }
-.tokenomic{
-	background:#ffffff;
-	margin:auto;
+#chart_wrap {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow:hidden;
+}
+
+#chart_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
 }
 
     </style> 
@@ -174,9 +184,9 @@
 	<h2 style="text-align:center;color:#bf3268;">Our Vision</h2>
 	<p style="text-align:center;padding-top:35px;">Our purpose is to help create a decentralized financial system by responsibly coordinating people, value, ownership, and reputation. Micin Inu token is aiming to create an ecosystem to increase your asset value as token Building a safe and secure platform to earn a handsome income through staking, along with maintaining their privacy, security, and autonomy. We strive to create an ecosystem based on sound monetary policies, with a sound and solid decentralized foundation, that should be expected with the Micin Inu platform.</p>
         <h2 style="text-align:center;color:#bf3268;">Tokenomic</h2>
-	<div class="tokenomic">
-	<div id="piechart">
-	</div>
+	<div id="chart_wrap">
+        <div id="chart_div"></div>
+        </div>
 </div>
 <script src="js/main.min.js"></script>
 <script src="js/web3.js"></script>
@@ -201,12 +211,15 @@ function drawChart() {
   
 ]);
 
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Micin Inu Tokenomic', 'width':550, 'height':400};
+  $(window).on("throttledresize", function (event) {
+    var options = {
+        width: '100%',
+        height: '100%'
+    };
 
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
+    var data = google.visualization.arrayToDataTable([]);
+    drawChart(data, options);
+});
 }
 </script>
 <script>
