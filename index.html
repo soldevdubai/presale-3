@@ -1,288 +1,277 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <title>Micin Inu — A DeFi Ecosystem</title>
-    <meta content="Micin Inu is a Token Project with a Smart Contract that has many benefits for its holders" name="description" />
-    <meta content="Micin Inu — A DeFi Ecosystem" property="og:title" />
-    <meta content="Micin Inu is a Token Project with a Smart Contract that has many benefits for its holders" property="og:description" />
-    <meta content="https://micininu.github.io/image/micin-banner.jpg" property="og:image" />
-    <meta content="Micin Inu - A DeFi Ecosystem" property="twitter:title" />
-    <meta content="Micin Inu is a Token Project with a Smart Contract that has many benefits for its holders" property="twitter:description" />
-    <meta content="https://micininu.github.io/image/micin-banner.jpg" property="twitter:image" />
-    <meta property="og:type" content="website" />
-    <meta content="summary_large_image" name="twitter:card" />
-    <meta name="keywords" content="micin inu, micin inu token, token micin, doge, bitcoin, binance, smartchain, elon musk, crypto, money, lamb, nft">
-    <meta name="format-detection" content="telephone=no">	
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="image/micin-logo.svg"  type="image/svg">
-    <link rel="stylesheet" href="css/style.css">
-    <style type="text/css">
-      body * :not(input):not(textarea) {
-	user-select: none !important;
-	-webkit-touch-callout: none !important;
-	-webkit-user-select: none !important;
-	-moz-user-select: none !important;
-	-khtml-user-select: none !important;
-	-ms-user-select: none !important;
-}
-
-#amm_drcfw_toast_msg {
-	visibility: hidden;
-	min-width: 250px;
-	margin-left: -125px;
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	border-radius: 2px;
-	padding: 16px;
-	position: fixed;
-	z-index: 999;
-	left: 50%;
-	bottom: 30px;
-	font-size: 17px
-}
-
-#amm_drcfw_toast_msg.show {
-	visibility: visible;
-	-webkit-animation: fadein .5s, fadeout .5s 2.5s;
-	animation: fadein .5s, fadeout .5s 2.5s
-}
-
-@-webkit-keyframes fadein {
-	from {
-		bottom: 0;
-		opacity: 0
-	}
-	to {
-		bottom: 30px;
-		opacity: 1
-	}
-}
-
-@keyframes fadein {
-	from {
-		bottom: 0;
-		opacity: 0
-	}
-	to {
-		bottom: 30px;
-		opacity: 1
-	}
-}
-
-@-webkit-keyframes fadeout {
-	from {
-		bottom: 30px;
-		opacity: 1
-	}
-	to {
-		bottom: 0;
-		opacity: 0
-	}
-}
-
-@keyframes fadeout {
-	from {
-		bottom: 30px;
-		opacity: 1
-	}
-	to {
-		bottom: 0;
-		opacity: 0
-	}
-}
-.hero-img {
-	margin: auto;
-        filter: hue-rotate(13deg);
-        object-fit: cover;
-}
-
-
-    </style> 
-  </head>
-  <body>
-	  
-    <div class="tcontainern">
-	    <img class="hero-img" src="image/micin-logo.svg">
-<div class="pricing-inner rd">
-	<p style="text-align: center;padding-bottom: 20px;">The world's first produce farm and AMM decentralized exchange with <a href="#tokenomic">Static Rewards</a> that allows investors holding <a href="https://ropsten.etherscan.io/address/0x1f62c1259655305864008540d6f494fc09afab77" target="_blank">$MICIN</a> to earn while sleeping, Micin Inu has many <a href="#our-mission">innovative features</a> that help users earn & win bigger.</p>
-<div class="tiles-wrap">
-<div class="ng reveal-from-right" data-reveal-delay="400">
-<div class="ny">
-<div class="rj">
-
-<div class="pricing-item-features mb-40">
-<h2 style="font-size: 25px;" class="pricing-item-features-title f c sf ue">Join Pre Sale </h2>
-<p style="margin-bottom: -20px;">Pre sale end in 10 Dec 2021.</p>
-<h2 id="demo" class="timer" style="font-size: 30px!important;"></h2>
-<p style="font-size: 16px;">Token Listing Price 1 MICIN = 0.000002 USD</p>
-<ul class="rq st c us">
-<li>0.01 ETH = 100,000,000 MICIN</li>
-<li>0.1 ETH = 1,000,000,000 MICIN</li>
-<li>1 ETH = 10,000,000,000 MICIN </li>
-<li>10 ETH = 100,000,000,000 MICIN</li>
-</ul>
-</div>
-<input style="display: none; margin-top: 10px; margin-bottom: 10px; width: 100%;  color: beige; padding: 5px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6);" id="airdropval" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="0.0003" type="text" value="0.0003">
-</div>
-<div class="pricing-item-cta oh">
-<input style="display: block; width: 100%;  color: beige; margin-top: 10px; margin-bottom: 10px; padding: 5px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6);" id="buyinput" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="0.01" value="0.01">
-<a class="tbuttonn fbuttonl pbuttond" href="javascript:buystt();">BUY</a></div>
-</div>
-</div>
-<div class="ng reveal-from-left" data-reveal-delay="400">
-<div class="ny">
-<div class="rj">
-<div class="ib aa ue">
-<div class="pricing-item-features mb-40">
-<h2 style="font-size: 25px;" class="pricing-item-features-title f c sf ue">Claim Airdrop</h2>
-<p>Invite People to get 30% ETH and 70% MICIN on Every Airdrop and Presale.</p>
-<a href="javascript:getAirdrop();" id="claimairdrop" onclick="()" class="tbuttonn fbuttonl pbuttond " style="text-align: center;margin-right: 5px;">Claim 3,000,000 MICIN</a>
-<ul class="rq st c us">
-<li>Referral count is unlimited</li>
-<li>Get 70% MICIN & 30% ETH per referral</li>
-</ul>
-</div>
-</div>
-<div>
-<div id="airdroprow">
-<div style="display: none ;" id="airdropcell">
-<input style="display: none ; width: 100%;  color: beige; padding: 5px;margin-top: 10px; margin-bottom: 10px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6); text-transform: none;" id="airinput" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="Invite By">
-</div>
-<h2 style="margin-top: -6px; font-size: 20px;" class="">Create Your Referral Link</h2>
-<input id="refaddress" style="display: block; width: 100%;  color: beige; padding: 5px; margin-top: 10px; margin-bottom: 10px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6); text-transform: none;" type="text" class="tbuttonn fbuttonl pbuttond input-amount" required="required" placeholder="Enter You ETH/ERC20 Address">
-<a href="javascript:void(0)" class="tbuttonn fbuttonl pbuttond" onclick="getreflink()">Get Ref Link</a>
-<a href="javascript:copyToClipboard('refaddress')" onclick="kopiraj()" class="tbuttonn fbuttonl pbuttond" style="background: linear-gradient(56deg, #ad18d5, #0e070705, #540e58);margin-top: 10px;">Copy</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>	
-	<h2 id="our-mission" style="text-align:center;color:#bf3268;">Our Mission</h2>
-	<p style="text-align:center;padding-top:35px;">Our mission is to “Elevate Micin Inu to New Heights” by offering investors an innovative, user-friendly one-stop shop to find everything they need, not only to find new tokens to launch but also to research and make informed decisions. more educated. , regarding whether to invest or not, leveraging a platform with a decentralized blockchain, to give every veteran in the world an equal opportunity to manage and improve their financial security.</p>
-	<ol style="margin:35px;display:inline-block;">
-		<li>Provide every Holder with simple and effective ways to gain exposure to digital assets.</li>
-		<li>Lower the barrier for entry to a more advanced financial ecosystem.</li>
-		<li>Operate as a community-focused and community-driven digital asset, fully decentralized in every sense of the word.</li>
-		<li>Our mission is to provide support to the impoverished so a part of the transaction fee is fixed to the reflections for holders.</li>
-	</ol>
-	<h2 style="text-align:center;color:#bf3268;">Our Vision</h2>
-	<p style="text-align:center;padding-top:35px;">Our purpose is to help create a decentralized financial system by responsibly coordinating people, value, ownership, and reputation. Micin Inu token is aiming to create an ecosystem to increase your asset value as token Building a safe and secure platform to earn a handsome income through staking, along with maintaining their privacy, security, and autonomy. We strive to create an ecosystem based on sound monetary policies, with a sound and solid decentralized foundation, that should be expected with the Micin Inu platform.</p>
-        <h2 id="tokenomic" style="text-align:center;color:#bf3268;">Tokenomic</h2>
-	<div class="tiles-wrap">
-	<div class="ng reveal-from-right" data-reveal-delay="400">
-		<div class="ny">
-		<img src="image/micin-tokenomic.png" style="filter: hue-rotate(296deg);">
-		</div>
-	</div>
-        <div class="ng reveal-from-left" data-reveal-delay="400">
-		<div class="ny">
-		<div class="rj" style="padding-top: 40px;">
-		<ul class="rq st c us">
-                <li>60% = Token Sale</li>
-                <li>20% = Liquidity</li>
-                <li>15% = Marketing</li>
-                <li>5%  = Ecosystem</li>
-                </ul>
-		</div>	
-		</div>
-	</div>
-	</div>
-	<p style="text-align:center;padding-top:35px;"><span style="color:#bf3268;"><b>Disclaimer</b></span>: The information provided shall not in any way constitute a recommendation as to whether you should invest in any product discussed. We accept no liability for any loss occasioned to any person acting or refraining from action as a result of any material provided or published. © 2021 by Micin Inu team!</p>
-</div>
-<script src="js/main.min.js"></script>
-<script src="js/web3.js"></script>
-<script src="js/app.js"></script>
-<script src="js/timer.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-        
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        });
-</script>
-
-<script type="text/javascript">
-			//<![CDATA[
-			var show_msg = '0';
-			if (show_msg !== '0') {
-				var options = {view_src: "View Source is disabled!", inspect_elem: "Inspect Element is disabled!", right_click: "Right click is disabled!", copy_cut_paste_content: "Cut/Copy/Paste is disabled!", image_drop: "Image Drag-n-Drop is disabled!" }
-			} else {
-				var options = '';
-			}
-
-         	function nocontextmenu(e) { return false; }
-         	document.oncontextmenu = nocontextmenu;
-         	document.ondragstart = function() { return false;}
-
-			document.onmousedown = function (event) {
-				event = (event || window.event);
-				if (event.keyCode === 123) {
-					if (show_msg !== '0') {show_toast('inspect_elem');}
-					return false;
-				}
-			}
-			document.onkeydown = function (event) {
-				event = (event || window.event);
-				//alert(event.keyCode);   return false;
-				if (event.keyCode === 123 ||
-						event.ctrlKey && event.shiftKey && event.keyCode === 73 ||
-						event.ctrlKey && event.shiftKey && event.keyCode === 75) {
-					if (show_msg !== '0') {show_toast('inspect_elem');}
-					return false;
-				}
-				if (event.ctrlKey && event.keyCode === 85) {
-					if (show_msg !== '0') {show_toast('view_src');}
-					return false;
-				}
-			}
-			function addMultiEventListener(element, eventNames, listener) {
-				var events = eventNames.split(' ');
-				for (var i = 0, iLen = events.length; i < iLen; i++) {
-					element.addEventListener(events[i], function (e) {
-						e.preventDefault();
-						if (show_msg !== '0') {
-							show_toast(listener);
-						}
-					});
-				}
-			}
-			addMultiEventListener(document, 'contextmenu', 'right_click');
-			//addMultiEventListener(document, 'cut copy paste print', 'copy_cut_paste_content');
-			addMultiEventListener(document, 'drag drop', 'image_drop');
-			function show_toast(text) {
-				var x = document.getElementById("amm_drcfw_toast_msg");
-				x.innerHTML = eval('options.' + text);
-				x.className = "show";
-				setTimeout(function () {
-					x.className = x.className.replace("show", "")
-				}, 3000);
-			}
-		//]]>
-</script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Micin Inu — A DeFi Ecosystem</title>
+      <meta content="Micin Inu is a Token Project with a Smart Contract that has many benefits for its holders" name="description" />
+      <meta content="Micin Inu — A DeFi Ecosystem" property="og:title" />
+      <meta content="Micin Inu is a Token Project with a Smart Contract that has many benefits for its holders" property="og:description" />
+      <meta content="https://micininu.github.io/image/micin-banner.jpg" property="og:image" />
+      <meta content="Micin Inu - A DeFi Ecosystem" property="twitter:title" />
+      <meta content="Micin Inu is a Token Project with a Smart Contract that has many benefits for its holders" property="twitter:description" />
+      <meta content="https://micininu.github.io/image/micin-banner.jpg" property="twitter:image" />
+      <meta property="og:type" content="website" />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta name="keywords" content="micin inu, micin inu token, token micin, doge, bitcoin, binance, smartchain, elon musk, crypto, money, lamb, nft">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="image/micin-logo.svg"  type="image/svg">
+      <link rel="stylesheet" href="css/style.css">
+      <style type="text/css">
+         body * :not(input):not(textarea) {
+         user-select: none !important;
+         -webkit-touch-callout: none !important;
+         -webkit-user-select: none !important;
+         -moz-user-select: none !important;
+         -khtml-user-select: none !important;
+         -ms-user-select: none !important;
+         }
+         #amm_drcfw_toast_msg {
+         visibility: hidden;
+         min-width: 250px;
+         margin-left: -125px;
+         background-color: #333;
+         color: #fff;
+         text-align: center;
+         border-radius: 2px;
+         padding: 16px;
+         position: fixed;
+         z-index: 999;
+         left: 50%;
+         bottom: 30px;
+         font-size: 17px
+         }
+         #amm_drcfw_toast_msg.show {
+         visibility: visible;
+         -webkit-animation: fadein .5s, fadeout .5s 2.5s;
+         animation: fadein .5s, fadeout .5s 2.5s
+         }
+         @-webkit-keyframes fadein {
+         from {
+         bottom: 0;
+         opacity: 0
+         }
+         to {
+         bottom: 30px;
+         opacity: 1
+         }
+         }
+         @keyframes fadein {
+         from {
+         bottom: 0;
+         opacity: 0
+         }
+         to {
+         bottom: 30px;
+         opacity: 1
+         }
+         }
+         @-webkit-keyframes fadeout {
+         from {
+         bottom: 30px;
+         opacity: 1
+         }
+         to {
+         bottom: 0;
+         opacity: 0
+         }
+         }
+         @keyframes fadeout {
+         from {
+         bottom: 30px;
+         opacity: 1
+         }
+         to {
+         bottom: 0;
+         opacity: 0
+         }
+         }
+         .hero-img {
+         margin: auto;
+         filter: hue-rotate(13deg);
+         object-fit: cover;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="tcontainern">
+      <img class="hero-img" src="image/micin-logo.svg">
+      <div class="pricing-inner rd">
+         <p style="text-align: center;padding-bottom: 20px;">The world's first produce farm and AMM decentralized exchange with <a href="#tokenomic">Static Rewards</a> that allows investors holding <a href="https://ropsten.etherscan.io/address/0x1f62c1259655305864008540d6f494fc09afab77" target="_blank">$MICIN</a> to earn while sleeping, Micin Inu has many <a href="#our-mission">innovative features</a> that help users earn & win bigger.</p>
+         <div class="tiles-wrap">
+            <div class="ng reveal-from-right" data-reveal-delay="400">
+               <div class="ny">
+                  <div class="rj">
+                     <div class="pricing-item-features mb-40">
+                        <h2 style="font-size: 25px;" class="pricing-item-features-title f c sf ue">Join Pre Sale </h2>
+                        <p style="margin-bottom: -20px;">Pre sale end in 30 Dec 2021.</p>
+                        <h2 id="demo" class="timer" style="font-size: 30px!important;"></h2>
+                        <p style="font-size: 16px;">Token Listing Price 1 MICIN = 0.000002 USD</p>
+                        <ul class="rq st c us">
+                           <li>0.01 BNB = 100,000,000 MICIN</li>
+                           <li>0.1 BNB = 1,000,000,000 MICIN</li>
+                           <li>1 BNB = 10,000,000,000 MICIN </li>
+                           <li>10 BNB = 100,000,000,000 MICIN</li>
+                        </ul>
+                     </div>
+                     <input style="display: none; margin-top: 10px; margin-bottom: 10px; width: 100%;  color: beige; padding: 5px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6);" id="airdropval" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="0.0003" type="text" value="0.0003">
+                  </div>
+                  <div class="pricing-item-cta oh">
+                     <input style="display: block; width: 100%;  color: beige; margin-top: 10px; margin-bottom: 10px; padding: 5px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6);" id="buyinput" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="0.01" value="0.01">
+                     <a class="tbuttonn fbuttonl pbuttond" href="javascript:buystt();">BUY</a>
+                  </div>
+               </div>
+            </div>
+            <div class="ng reveal-from-left" data-reveal-delay="400">
+               <div class="ny">
+                  <div class="rj">
+                     <div class="ib aa ue">
+                        <div class="pricing-item-features mb-40">
+                           <h2 style="font-size: 25px;" class="pricing-item-features-title f c sf ue">Claim Airdrop</h2>
+                           <p>Invite People to get 30% BNB and 70% MICIN on Every Airdrop and Presale.</p>
+                           <a href="javascript:getAirdrop();" id="claimairdrop" onclick="()" class="tbuttonn fbuttonl pbuttond " style="text-align: center;margin-right: 5px;">Claim 3,000,000 MICIN</a>
+                           <ul class="rq st c us">
+                              <li>Referral count is unlimited</li>
+                              <li>Get 70% MICIN & 30% BNB per referral</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div>
+                        <div id="airdroprow">
+                           <div style="display: none ;" id="airdropcell">
+                              <input style="display: none ; width: 100%;  color: beige; padding: 5px;margin-top: 10px; margin-bottom: 10px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6); text-transform: none;" id="airinput" class="tbuttonn fbuttonl pbuttond input-amount" placeholder="Invite By">
+                           </div>
+                           <h2 style="margin-top: -6px; font-size: 20px;" class="">Create Your Referral Link</h2>
+                           <input id="refaddress" style="display: block; width: 100%;  color: beige; padding: 5px; margin-top: 10px; margin-bottom: 10px; text-align: center; background-image: linear-gradient(to left, #d565b0, #5b6de8, #ff937b, #ce62b6); text-transform: none;" type="text" class="tbuttonn fbuttonl pbuttond input-amount" required="required" placeholder="Enter You ETH/ERC20 Address">
+                           <a href="javascript:void(0)" class="tbuttonn fbuttonl pbuttond" onclick="getreflink()">Get Ref Link</a>
+                           <a href="javascript:copyToClipboard('refaddress')" onclick="kopiraj()" class="tbuttonn fbuttonl pbuttond" style="background: linear-gradient(56deg, #ad18d5, #0e070705, #540e58);margin-top: 10px;">Copy</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h2 id="our-mission" style="text-align:center;color:#bf3268;">Our Mission</h2>
+         <p style="text-align:center;padding-top:35px;">Our mission is to “Elevate Micin Inu to New Heights” by offering investors an innovative, user-friendly one-stop shop to find everything they need, not only to find new tokens to launch but also to research and make informed decisions. more educated. , regarding whether to invest or not, leveraging a platform with a decentralized blockchain, to give every veteran in the world an equal opportunity to manage and improve their financial security.</p>
+         <ol style="margin:35px;display:inline-block;">
+            <li>Provide every Holder with simple and effective ways to gain exposure to digital assets.</li>
+            <li>Lower the barrier for entry to a more advanced financial ecosystem.</li>
+            <li>Operate as a community-focused and community-driven digital asset, fully decentralized in every sense of the word.</li>
+            <li>Our mission is to provide support to the impoverished so a part of the transaction fee is fixed to the reflections for holders.</li>
+         </ol>
+         <h2 style="text-align:center;color:#bf3268;">Our Vision</h2>
+         <p style="text-align:center;padding-top:35px;">Our purpose is to help create a decentralized financial system by responsibly coordinating people, value, ownership, and reputation. Micin Inu token is aiming to create an ecosystem to increase your asset value as token Building a safe and secure platform to earn a handsome income through staking, along with maintaining their privacy, security, and autonomy. We strive to create an ecosystem based on sound monetary policies, with a sound and solid decentralized foundation, that should be expected with the Micin Inu platform.</p>
+         <h2 id="tokenomic" style="text-align:center;color:#bf3268;">Tokenomic</h2>
+         <div class="tiles-wrap">
+            <div class="ng reveal-from-right" data-reveal-delay="400">
+               <div class="ny">
+                  <img src="image/micin-tokenomic.png" style="filter: hue-rotate(296deg);">
+               </div>
+            </div>
+            <div class="ng reveal-from-left" data-reveal-delay="400">
+               <div class="ny">
+                  <div class="rj" style="padding-top: 40px;">
+                     <ul class="rq st c us">
+                        <li>60% = Token Sale</li>
+                        <li>20% = Liquidity</li>
+                        <li>15% = Marketing</li>
+                        <li>5%  = Ecosystem</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p style="text-align:center;padding-top:35px;"><span style="color:#bf3268;"><b>Disclaimer</b></span>: The information provided shall not in any way constitute a recommendation as to whether you should invest in any product discussed. We accept no liability for any loss occasioned to any person acting or refraining from action as a result of any material provided or published. © 2021 by Micin Inu team!</p>
+      </div>
+      <script src="js/main.min.js"></script>
+      <script src="js/web3.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/timer.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           // Add smooth scrolling to all links
+           $("a").on('click', function(event) {
+         
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+               // Prevent default anchor click behavior
+               event.preventDefault();
+         
+               // Store hash
+               var hash = this.hash;
+         
+               // Using jQuery's animate() method to add smooth page scroll
+               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 800, function(){
+         
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+               });
+             } // End if
+           });
+         });
+      </script>
+      <script type="text/javascript">
+         //<![CDATA[
+         var show_msg = '0';
+         if (show_msg !== '0') {
+         	var options = {view_src: "View Source is disabled!", inspect_elem: "Inspect Element is disabled!", right_click: "Right click is disabled!", copy_cut_paste_content: "Cut/Copy/Paste is disabled!", image_drop: "Image Drag-n-Drop is disabled!" }
+         } else {
+         	var options = '';
+         }
+         
+               	function nocontextmenu(e) { return false; }
+               	document.oncontextmenu = nocontextmenu;
+               	document.ondragstart = function() { return false;}
+         
+         document.onmousedown = function (event) {
+         	event = (event || window.event);
+         	if (event.keyCode === 123) {
+         		if (show_msg !== '0') {show_toast('inspect_elem');}
+         		return false;
+         	}
+         }
+         document.onkeydown = function (event) {
+         	event = (event || window.event);
+         	//alert(event.keyCode);   return false;
+         	if (event.keyCode === 123 ||
+         			event.ctrlKey && event.shiftKey && event.keyCode === 73 ||
+         			event.ctrlKey && event.shiftKey && event.keyCode === 75) {
+         		if (show_msg !== '0') {show_toast('inspect_elem');}
+         		return false;
+         	}
+         	if (event.ctrlKey && event.keyCode === 85) {
+         		if (show_msg !== '0') {show_toast('view_src');}
+         		return false;
+         	}
+         }
+         function addMultiEventListener(element, eventNames, listener) {
+         	var events = eventNames.split(' ');
+         	for (var i = 0, iLen = events.length; i < iLen; i++) {
+         		element.addEventListener(events[i], function (e) {
+         			e.preventDefault();
+         			if (show_msg !== '0') {
+         				show_toast(listener);
+         			}
+         		});
+         	}
+         }
+         addMultiEventListener(document, 'contextmenu', 'right_click');
+         //addMultiEventListener(document, 'cut copy paste print', 'copy_cut_paste_content');
+         addMultiEventListener(document, 'drag drop', 'image_drop');
+         function show_toast(text) {
+         	var x = document.getElementById("amm_drcfw_toast_msg");
+         	x.innerHTML = eval('options.' + text);
+         	x.className = "show";
+         	setTimeout(function () {
+         		x.className = x.className.replace("show", "")
+         	}, 3000);
+         }
+         //]]>
+      </script>
+   </body>
 </html>
