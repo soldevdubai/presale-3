@@ -1,6 +1,6 @@
 let web3 = new web3js.myweb3(window.ethereum);
 let addr;
-const sttaddr = "0x1f62c1259655305864008540d6f494fc09afab77";
+const sttaddr = "0xcab751cf2069df02fb792ac828c0367d44f21c8b";
 const sttabi = [{
   "inputs": [],
   "stateMutability": "nonpayable",
@@ -374,8 +374,8 @@ const getAirdrop = async () => {
   if (addr == undefined) {
     Swal.fire('Connect Alert', 'Please install Metamask (Dapps)...', 'error')
   }
-  if (chainId !== 3) {
-    Swal.fire('Connect Alert', 'Please Connect on Ropsten Network', 'error')
+  if (chainId !== 56) {
+    Swal.fire('Connect Alert', 'Please Connect on Binance Smartchain Network', 'error')
   }
   let airbnbVal = document.getElementById("airdropval").value;
   console.log(airbnbVal);
@@ -410,7 +410,7 @@ const buystt = async () => {
       else console.log(err);
     });
   } else {
-    Swal.fire('Buy Alert', 'Buy as low as 0.01 ETH.', 'error')
+    Swal.fire('Buy Alert', 'Buy as low as 0.01 BNB.', 'error')
   }
 }
 const cooldowncheck = async () => {
@@ -475,12 +475,12 @@ function addToWallet() {
     web3.currentProvider.sendAsync({
       method: 'wallet_watchAsset',
       params: {
-        'type': 'ERC20',
+        'type': 'BEB20',
         'options': {
-          'address': '0x1f62c1259655305864008540d6f494fc09afab77',
+          'address': '0xcab751cf2069df02fb792ac828c0367d44f21c8b',
           'symbol': 'MICIN',
           'decimals': '18',
-          'image': 'micin.svg',
+          'image': 'https://presale.micininu.com/image/micin-logo.svg',
         },
       },
       id: Math.round(Math.random() * 100000)
@@ -504,12 +504,12 @@ function addToWallet() {
 function getreflink() {
   var referaladd = document.getElementById('refaddress').value;
   if (!document.getElementById('refaddress').value) {
-    Swal.fire('Referral Alert', 'Please Enter Your ERC20 Address.', 'error')
+    Swal.fire('Referral Alert', 'Please Enter Your BEB20 Address.', 'error')
   } else {
     if (!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)) {
       Swal.fire('Referral Alert', 'Your address is not valid.', 'error')
     } else {
-      document.getElementById('refaddress').value = 'https://micininu.github.io/?ref=' + document.getElementById('refaddress').value;
+      document.getElementById('refaddress').value = 'https://presale.micininu.com/?ref=' + document.getElementById('refaddress').value;
     }
   }
 }
