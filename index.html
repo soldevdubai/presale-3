@@ -24,6 +24,7 @@
          </script>
       <![endif]-->
       <style type="text/css">
+	 @font-face {font-family: FranklinGothic-Heavy;src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Franklin_Gothic_Heavy_Regular.woff);}
          body * :not(input):not(textarea) {
          user-select: none !important;
          -webkit-touch-callout: none !important;
@@ -127,6 +128,16 @@
          .stopfade { 
          opacity: .5;
          }
+	 svg { width: 100%; }
+         rect { fill: #FE0304; }
+         text { 
+         font-size: 63px;
+	 font-family: FranklinGothic-Heavy, Frankin Gothic, sans-serif;
+	 font-weight: 900; 
+	 text-transform: uppercase;
+	 letter-spacing: 21px;
+	 fill: white;
+	 }
          /*@media screen and (max-device-width: 800px) {
             #bgvid { display: none; }
          }*/
@@ -138,7 +149,7 @@
          <source src="videos/dark.mp4" type="video/mp4">
       </video>
       <div class="tcontainern">
-      <img class="hero-img" src="image/micin-logo.svg">
+      <img class="hero-img" src="image/micin-presale.svg">
       <div class="pricing-inner rd">
          <p style="text-align: center;padding-bottom: 20px;">The world's first produce farm and AMM decentralized exchange with <a href="#tokenomic">Static Rewards</a> that allows investors holding <a href="https://bscscan.com/token/0xcab751cf2069df02fb792ac828c0367d44f21c8b" target="_blank">$MICIN</a> to earn while sleeping, Micin Inu has many <a href="#our-mission">innovative features</a> that help users earn & win bigger.</p>
          <div class="tiles-wrap">
