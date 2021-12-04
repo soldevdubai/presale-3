@@ -18,6 +18,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" href="image/micin-logo.svg"  type="image/svg">
       <link rel="stylesheet" href="css/style.css">
+      <!--[if lt IE 9]>
+         <script>
+	         document.createElement('video');
+         </script>
+      <![endif]-->
       <style type="text/css">
          body * :not(input):not(textarea) {
          user-select: none !important;
@@ -118,6 +123,7 @@
          background-size: cover;
          transition: 1s opacity;
          }
+         video { display: block; }
          .stopfade { 
          opacity: .5;
          }
