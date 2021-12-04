@@ -104,9 +104,33 @@
          padding-bottom: 12px;
          text-align: left;
          }
+         video { 
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         min-width: 100%;
+         min-height: 100%;
+         width: auto;
+         height: auto;
+         z-index: -100;
+         transform: translateX(-50%) translateY(-50%);
+         background: url('image/dark.jpg') no-repeat;
+         background-size: cover;
+         transition: 1s opacity;
+         }
+         .stopfade { 
+         opacity: .5;
+         }
+         @media screen and (max-device-width: 800px) {
+            #bgvid { display: none; }
+         }
       </style>
    </head>
    <body>
+      <video poster="image/dark.jpg" id="bgvid" playsinline autoplay muted loop>
+         <source src="videos/dark.webm" type="video/webm">
+         <source src="videos/dark.mp4" type="video/mp4">
+      </video>
       <div class="tcontainern">
       <img class="hero-img" src="image/micin-logo.svg">
       <div class="pricing-inner rd">
@@ -407,5 +431,39 @@
          }
          //]]>
       </script>
+      <script>
+         var vid = document.getElementById("bgvid");
+         var pauseButton = document.querySelector("#polina button");
+
+         if (window.matchMedia('(prefers-reduced-motion)').matches) {
+            vid.removeAttribute("autoplay");
+            vid.pause();
+            pauseButton.innerHTML = "Paused";
+         }
+
+         function vidFade() {
+            vid.classList.add("stopfade");
+         }
+
+            vid.addEventListener('ended', function()
+         {
+         // only functional if "loop" is removed 
+            vid.pause();
+         // to capture IE10
+            vidFade();
+          }); 
+
+
+          pauseButton.addEventListener("click", function() {
+          vid.classList.toggle("stopfade");
+          if (vid.paused) {
+          vid.play();
+          pauseButton.innerHTML = "Pause";
+          } else {
+          vid.pause();
+          pauseButton.innerHTML = "Paused";
+          }
+          })
+       </script>
    </body>
 </html>
