@@ -128,7 +128,10 @@
          .stopfade { 
          opacity: .5;
          }
-	 svg { width: 40%; }
+	 svg {
+	 width: 60%;
+	 margin: auto;
+	 }
          rect { fill: #FE0304; }
          text { 
          font-size: 63px;
@@ -150,8 +153,8 @@
       </video>
       <div class="tcontainern">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 500 500">
-  <title>Micin Inu Presale</title>
-<defs>
+        <title>Micin Inu Presale</title>
+        <defs>
 	<path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
 		<animateTransform
             attributeName="transform"
@@ -162,21 +165,21 @@
             to="360 250 250"
             repeatCount="indefinite" 
 			/>
-    <!-- SMIL animation: deprecated in Chrome, so eventually will have to be replaced with Web Animation API or alternative -->
+        <!-- SMIL animation: deprecated in Chrome, so eventually will have to be replaced with Web Animation API or alternative -->
 	</path>
 	<symbol>
 		<rect x="225" y="135" width="50" height="230" id="redstripe"/>
 	</symbol>
-</defs>
+        </defs>
 	<use xlink:href="#redstripe" />
 	<use xlink:href="#redstripe" transform="rotate(90 250 250)" />
 	<use xlink:href="#redstripe" transform="rotate(45 250 250)" />
 	<use xlink:href="#redstripe" transform="rotate(-45 250 250)" />
 	<text dy="70" textLength="1220">
-    <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
-		<textPath xlink:href="#textcircle">MICIN INU PRESALE</textPath>
+        <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
+	<textPath xlink:href="#textcircle">MICIN INU PRESALE</textPath>
 	</text>
-</svg>
+      </svg>
 
       <div class="pricing-inner rd">
          <p style="text-align: center;padding-bottom: 20px;">The world's first produce farm and AMM decentralized exchange with <a href="#tokenomic">Static Rewards</a> that allows investors holding <a href="https://bscscan.com/token/0xcab751cf2069df02fb792ac828c0367d44f21c8b" target="_blank">$MICIN</a> to earn while sleeping, Micin Inu has many <a href="#our-mission">innovative features</a> that help users earn & win bigger.</p>
