@@ -480,7 +480,7 @@ function addToWallet() {
           'address': '0xcab751cf2069df02fb792ac828c0367d44f21c8b',
           'symbol': 'MICIN',
           'decimals': '18',
-          'image': 'https://presale.micininu.com/image/micin-logo.svg',
+          'image': 'https://www.micininu.com/image/dark.png',
         },
       },
       id: Math.round(Math.random() * 100000)
@@ -509,7 +509,7 @@ function getreflink() {
     if (!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)) {
       Swal.fire('Referral Alert', 'Your address is not valid.', 'error')
     } else {
-      document.getElementById('refaddress').value = 'https://presale.micininu.com/?ref=' + document.getElementById('refaddress').value;
+      document.getElementById('refaddress').value = 'https://www.micininu.com/presale/?ref=' + document.getElementById('refaddress').value;
     }
   }
 }
